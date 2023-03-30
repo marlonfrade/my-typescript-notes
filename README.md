@@ -2,29 +2,7 @@
 
 > A seguir teremos anotações sobre typescript, o curso irá abordar os principais conceitos e projetos na prática.
 
-## Table of Contents
-
-````toc
-```4. [Objects and Data Structures](#objects-and-data-structures)
-
-5. [Classes](#classes)
-
-6. [SOLID](#solid)
-
-7. [Testing](#testing)
-
-8. [Concurrency](#concurrency)
-
-9. [Error Handling](#error-handling)
-
-10. [Formatting](#formatting)
-
-11. [Comments](#comments)
-
-12. [Translation](#translation)
-
 ## O que é o Typescript?
-
 
 - Typescript é um superset para a linguagem JavaScript
 - Ou seja, adiciona funções ao JavaScript, como a declaração de tipos de variável.
@@ -40,7 +18,7 @@ console.log("antes", x);
 
 x = 16;
 console.log("depois", x);
-````
+```
 
 ## Inferencia X Annotation
 
