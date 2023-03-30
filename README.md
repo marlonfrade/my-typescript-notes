@@ -1,7 +1,5 @@
 ## 👋 Fala Dev,
 
----
-
 > A seguir teremos anotações sobre typescript, o curso irá abordar os principais conceitos e projetos na prática.
 
 ## Table of Contents
@@ -26,7 +24,7 @@
 12. [Translation](#translation)
 
 ## O que é o Typescript?
----
+
 
 - Typescript é um superset para a linguagem JavaScript
 - Ou seja, adiciona funções ao JavaScript, como a declaração de tipos de variável.
@@ -46,8 +44,6 @@ console.log("depois", x);
 
 ## Inferencia X Annotation
 
----
-
 Ao trabalhar com projetos em typescript, será necessário estar familiarizado com qual caminho de tipagem seu código irá seguir.
 
 ```typescript
@@ -64,8 +60,6 @@ Ou seja, podemos perceber que na inferência o Typescript entende a qual tipo a 
 Porém cabe ressaltar que nem sempre a inferência vai funcionar, dado os contextos de cada situação, sendo necessário a recorrência da tipagem conforme segundo exemplo.
 
 ## Analisando Tipagem Básica
-
----
 
 ```typescript
 let firstName: string = "Marlon";
@@ -86,8 +80,6 @@ console.log(age);
 > Lembrando que o console do teu tipo deve ser o tipo que será utilizado para declarar o tipo da variável.
 
 ## Analisando a Tipagem de Objetos
-
----
 
 #### Array
 
@@ -144,8 +136,6 @@ console.log(user.name);
 ```
 
 ## Analisando Tipagem Múltipla
-
----
 
 #### Any
 
@@ -209,8 +199,6 @@ console.log(camisa);
 
 ## Analisando Tipagem Literal
 
----
-
 Podemos aplicar valores literais para um tipo, sendo assim impossível que esse valor seja alterado posteriormente.
 
 ```typescript
@@ -230,8 +218,6 @@ teste2 = null;
 ```
 
 ## Analisando Funções
-
----
 
 #### Função Básica
 
@@ -290,8 +276,6 @@ greeting("Marlon", "Sir");
 
 ## Interfaces
 
----
-
 As interfaces são um recurso do typescript que veio para o javascript, que padronizam algo para que possamos reutilizar como um tipo.
 
 ```typescript
@@ -326,8 +310,6 @@ console.log(result2);
 
 ## Narrowing
 
----
-
 Quando não sabemos qual tipo exato será o parâmetro de uma função, mas precisamos fazer uma tratativa com esses resultados, podemos usar o narrowing do typeof para tratar as condicionais:
 
 ```typescript
@@ -346,8 +328,6 @@ doSomething(true);
 Ao verificar o typeof de um parâmetro, estamos usando um narrowing de typeof para garantir que o retorno será de acordo com o parâmetro passado.
 
 ## Generics
-
----
 
 Um outro recurso do typescript é o generics, que para se evitar um any, pode ser aplicado em diferentes situações que possuem a necessidade de se declarar um tipo genérico, que pode receber mais de um tipo de valor não esperado, como uma função que mostra os itens de um array, porém não sabemos se os itens virão como number, string, ao invés do any podemos utilizar o generics para declarar um tipo genérico seguindo a seguinte linha de desenvolvimento
 
@@ -368,8 +348,6 @@ showArrayItems(a2);
 > Usamos a tag <> após o nome da função para remeter a algo genérico, como por exemplo T e U (que são mais utilizados no typescript). No caso acima utilizamos a tag T referenciando dentro do parâmetro para exemplificar que esperamos receber qualquer tipo de dado nesse array, porém sendo mais especificado que um simples any.
 
 ## Classes
-
----
 
 Class é um método de orientação a objeto utilizado para definir novas classes como no exemplo abaixo:
 
@@ -442,8 +420,6 @@ marlon.showUserRole(false);
 
 ## Interfaces em classes
 
----
-
 Interfaces é o core da orientação a objetos, geralmente sendo utilizada para ditar como uma classe irá se comportar. Sendo muito útil em projetos onde há classes que são muito parecidas, ou seja, tendo um padrão entre elas. Um exemplo de uma interface de veículos:
 
 ```typescript
@@ -472,8 +448,6 @@ mustang.showBrand();
 
 ## Herança
 
----
-
 Uma class também pode herdar outra class, como por exemplo, criando uma nova class Super Car que herda os tipos da class no exemplo anterior Car:
 
 ```typescript
@@ -496,8 +470,6 @@ a4.showBrand();
 > No exemplo acima utilizamos uma nova class que possui sua herança da class Car, porém nessa nova class adicionamos a nova chave "engine". Para se utilizar o constructor dentro da class herdada, devemos passar os tipos que declaramos no constructor "pai" e o novo declarado no constructor filho, e para atribuir os valores, utilizamos o "super" para extrair esses valores da class "pai".
 
 ## Decorators
-
----
 
 Os decorators são um recurso do typescript muito utilizados para validação de dados, para construir um evento observável em alguma class ou função. Um recurso complexo para quem é iniciante no typescript. Porém caso deseje utilizar, lembre-se de habilitar o mesmo dentro do seu arquivo de configuração, através da chave `experimentalDecorators`.
 
@@ -544,8 +516,6 @@ console.log(newUserMarlon);
 > Para utilizar um constructor devemos usar o "@" para exemplificar que estamos utilizando um constructor dentro do código.
 
 # Anotações do Projeto
-
----
 
 ## Configurando o Projeto
 
